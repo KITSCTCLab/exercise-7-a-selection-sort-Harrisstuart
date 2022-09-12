@@ -4,7 +4,7 @@ def selectionSort(array, size) -> List[int]:
   # Write your code here
   for i in range(size):
     value = i
-    for token in range(i+1,size):
+    for j in range(i+1,size):
       if array[j] < array[value]:
         value = j
     array[value],array[i]=array[i],array[value]
